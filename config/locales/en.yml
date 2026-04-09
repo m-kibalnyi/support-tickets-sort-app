@@ -1,0 +1,57 @@
+# Files in the config/locales directory are used for internationalization and
+# are automatically loaded by Rails. If you want to use locales other than
+# English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t "hello"
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t("hello") %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more about the API, please read the Rails Internationalization guide
+# at https://guides.rubyonrails.org/i18n.html.
+#
+# Be aware that YAML interprets the following case-insensitive strings as
+# booleans: `true`, `false`, `on`, `off`, `yes`, `no`. Therefore, these strings
+# must be quoted to be interpreted as strings. For example:
+#
+#     en:
+#       "yes": yup
+#       enabled: "ON"
+
+en:
+  support_ticket:
+    categories:
+      payment_flow: "Payment Flow"
+      checkout_process: "Checkout Process"
+      forget_password_feature: "Forget Password Feature"
+      remove_item_from_cart_button: "Remove Item From Cart Button"
+      cookies_acceptance_modal_window: "Cookies Acceptance Modal Window"
+      uncategorized: "Uncategorized"
+    statuses:
+      pending: "Pending"
+      processing: "Processing"
+      processed: "Processed"
+      failed: "Failed"
+  views:
+    application:
+      title: "Support Tickets Sort App"
+  services:
+    ai_classification:
+      errors:
+        failed: "AI Classification failed: %{message}"
+    jira_sync:
+      errors:
+        failed: "Jira Sync failed for ticket %{id}: %{message}"
+      summary_template: "Support Ticket: %{category}"
+    ticket_processor:
+      errors:
+        failed: "Ticket processing failed for ticket %{id}: %{message}"
