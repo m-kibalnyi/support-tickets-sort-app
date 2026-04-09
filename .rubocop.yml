@@ -1,0 +1,29 @@
+plugins:
+  - rubocop-rails
+
+AllCops:
+  TargetRubyVersion: 3.1
+  Exclude:
+    - 'bin/**/*'
+    - 'db/schema.rb'
+    - 'vendor/**/*'
+    - 'node_modules/**/*'
+    - 'storage/**/*'
+
+Rails:
+  Enabled: true
+
+Layout/LineLength:
+  Max: 120
+  Exclude:
+    - 'db/migrate/*.rb'
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+    - 'config/environments/*.rb'
+    - 'db/migrate/*.rb'
+
+Metrics/MethodLength:
+  Exclude:
+    - 'db/migrate/*.rb'
