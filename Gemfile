@@ -58,7 +58,7 @@ group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem 'web-console'
 
-  gem 'brakeman', '~> 7.1.1', require: false
+  gem 'brakeman', '~> 8.0.4', require: false
   gem 'rubocop', require: false
   gem 'rubocop-rails', require: false
 end
